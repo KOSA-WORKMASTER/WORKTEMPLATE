@@ -1,13 +1,11 @@
+@CHARSET "UTF-8";
+
 body {
   max-width: 100%;
   display: grid;
-  grid-template-areas:
-    "header header"
-    "nav main";
-
+  grid-template-areas: "header header" "nav main";
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 3fr;
-
   gap: 1.8vw;
 }
 
@@ -16,12 +14,18 @@ header {
   grid-area: header;
   height: 20vh;
   padding: 1vw;
-
   text-align: center;
 }
 header .swiper-container {
   overflow: hidden;
-  flex-basis: 90%;;
+  flex-basis: 90%;
+}
+header .swiper-container .swiper-wrapper {
+  vertical-align: center;
+}
+header .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 20vh;
 }
 header .swiper-prev {
   display: flex;
@@ -43,13 +47,6 @@ header .swiper-next {
   align-items: center;
   cursor: pointer;
 }
-header .swiper-container .swiper-wrapper {
-  vertical-align: center;
-}
-header .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  height: 20vh;
-}
 
 nav {
   grid-area: nav;
@@ -57,9 +54,9 @@ nav {
   padding: 1vw;
 }
 nav .image-container {
-  max-width: 100%
+  max-width: 100%;
 }
-nav .image-container .image-wrapper .image-img img{
+nav .image-container .image-wrapper .image-img img {
   width: 100%;
   height: 16vh;
 }
@@ -73,7 +70,7 @@ main .main-image-container {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 main .main-image-container .main-image-wrapper {
   width: 100%;
@@ -86,7 +83,8 @@ main .main-image-container .main-image-wrapper .main-image {
   justify-content: center;
   align-items: center;
 }
-
 main .main-image-container .main-image-wrapper .main-image img {
   height: 60vh;
 }
+
+/*# sourceMappingURL=assignment.css.map */
