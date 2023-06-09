@@ -28,9 +28,17 @@ header {
     .swiper-wrapper {
       vertical-align: center;
 
-      .swiper-slide img {
-        width: 100%;
-        height: 20vh;
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 20vh;
+        }
+
+        .nametag {
+          font-size: 32px;
+          transform: translateY(-110%);
+          background-color: rgba(217, 217, 217, 0.5);
+        }
       }
     }
   }

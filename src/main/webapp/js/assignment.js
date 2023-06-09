@@ -1,7 +1,7 @@
 new Swiper('header .swiper-container', {
     autoplay: true,
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 4,
     navigation: {
         prevEl: 'header .swiper-prev',
         nextEl: 'header .swiper-next'
